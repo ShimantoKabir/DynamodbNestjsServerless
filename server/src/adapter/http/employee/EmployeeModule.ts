@@ -4,9 +4,10 @@ import {DR} from "../../data/repositories/DynamoRepository";
 import {DS} from "../../data/connection/DatabaseService";
 import {DatabaseServiceImpl} from "../../data/connection/DatabaseServiceImpl";
 import {DynamoRepositoryImpl} from "../../data/repositories/implemantations/DynamoRepositoryImpl";
+import {Employee} from "../../data/models/Employee";
 
 @Module({
-  imports : [],
+  imports : [Employee],
   controllers: [EmployeeController],
   providers: [
     {
